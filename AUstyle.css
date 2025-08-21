@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0f3666;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+    flex: 1;
+    margin: 0 20px;
+    max-width: none;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.about-section {
+    padding: 40px 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f3666;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #f9b233;
+    color: #0f3666;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.about-image img {
+    height: 300px; 
+    width: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #002855;
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .menu a:hover {
+    background: #004080;
+  }
+  
+  .menu-icon:hover .menu {
+    display: block;
+  }
+  

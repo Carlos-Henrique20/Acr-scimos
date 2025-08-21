@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0f3666;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+    flex: 1;
+    margin: 0 20px;
+    max-width: none;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* Seção de Login */
+.login-section {
+    padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.login-container {
+    text-align: center;
+    padding: 20px;
+    width: 500px; /* Aumentei de 400px para 500px para um tamanho maior */
+}
+
+.login-logo img {
+    height: 100px; /* Tamanho inicial ajustável, pode mudar com base na imagem */
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f3666;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 15px; /* Aumentei o padding dos campos para 15px */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Garante que os campos ocupem toda a largura */
+}
+
+.login-form .forgot-password {
+    font-size: 14px;
+    color: #f9b233;
+    text-align: center; /* Centralizado conforme pedido */
+    text-decoration: none;
+    margin-top: 5px; /* Ajuste para melhor espaçamento */
+}
+
+.login-button {
+    background-color: #f9b233;
+    color: #0f3666;
+    border: none;
+    padding: 15px; /* Aumentei o padding do botão */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Garante que o botão ocupe toda a largura */
+}
+/* Esconde o menu por padrão */
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;   /* distância do topo, ajusta conforme seu header */
+    left: 10px;
+    background: #002855;
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Links do menu */
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .menu a:hover {
+    background: #004080;
+  }
+  
+  /* Mostra o menu quando passar o mouse */
+  .menu-icon:hover .menu {
+    display: block;
+  }
+  

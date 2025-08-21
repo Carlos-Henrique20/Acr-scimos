@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0f3666;
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+    flex: 1;
+    margin: 0 20px;
+    max-width: none;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* Seções de Produtos */
+.products-section {
+    padding: 20px;
+}
+
+.products-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f3666;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0f3666;
+    padding-bottom: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.product-image img {
+    height: 250px; /* Mantive 250px como base, ajustável se necessário */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    object-fit: contain; /* Mantém a proporção da imagem sem distorção */
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    color: #0f3666;
+    font-weight: bold;
+}
+/* Esconde o menu por padrão */
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;   /* distância do topo, ajusta conforme seu header */
+    left: 10px;
+    background: #002855;
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Links do menu */
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .menu a:hover {
+    background: #004080;
+  }
+  
+  /* Mostra o menu quando passar o mouse */
+  .menu-icon:hover .menu {
+    display: block;
+  }
+  
